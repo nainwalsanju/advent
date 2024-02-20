@@ -14,15 +14,15 @@ def process_file(file_path):
 
 
 def create_two_digit_number(input_string) -> str:
-  first_digit = ""
-  last_digit = ""
-  for char in input_string:
-    if char.isdigit():
-      if first_digit == "":
-        first_digit = char
-      last_digit = char
-  return first_digit + last_digit
-
+    first_digit = ""
+    last_digit = ""
+    for char in input_string:
+        if char.isdigit():
+            if first_digit == "":
+                first_digit = char
+            last_digit = char
+    print(first_digit+last_digit)
+    return first_digit + last_digit
 
 def main():
   file_path = "input.txt"
